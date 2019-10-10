@@ -1,0 +1,88 @@
+.header {
+  width: 100vw;
+  height: 10vh;
+}
+
+.menu_button {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 6px;
+  background-color: rgb(24, 23, 23);
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.change .bar1 {
+  background-color: white;
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  background-color: white;
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-10px, -10px);
+}
+
+.menu_list_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 0vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: black;
+  animation: slide 1s forwards;
+}
+
+@keyframes slide {
+    100% { width: 100vw; }
+}
+
+.menu_list_container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+  color: white;
+}
+
+.menu_list_container li {
+  padding: 50px;
+  font-size: 30px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.menu_list_container a {
+  color: white;
+}
+
+.menu_list_container li:hover {
+  color: #235bc1;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 7vh;
+  }
+  .bar1, .bar2, .bar3 {
+    height: 5px;
+  }
+}

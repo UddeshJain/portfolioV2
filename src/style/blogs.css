@@ -1,0 +1,173 @@
+.post_container {
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  flex-direction: row;
+}
+
+.post_container h1 {
+  display: none;
+}
+
+.post_info {
+  width: 60vw;
+  background: #235bc1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+}
+
+.post_all {
+  order: 2;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.post_info a {
+  color: white;
+}
+
+.post_container p a {
+  font-size: 15px;
+  font-weight: 50;
+}
+
+.post_all li {
+  list-style: none;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.active_post {
+  background: #edeef0;
+  font-weight: bold;
+}
+
+.post_list {
+  width: 100%;
+  height: 60%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+.post_list::-webkit-scrollbar{
+  display: none;
+}
+
+.article_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  align-self: center;
+  border-radius: 50%;
+  background: rgb(231, 241, 240);
+}
+.icon_grid {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  width: 80%;
+  margin-bottom: 20px;
+  border-top: 1px solid rgb(235, 232, 232);
+  border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+.icon_grid label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.icon_grid img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: left;
+  width: 70%;
+}
+
+.tags p {
+  box-sizing: border-box;
+  padding: 5px 20px 5px 20px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.read_more {
+  align-self: center;
+  margin-top: 50px;
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #0f2f69;
+}
+
+.read_more:hover {
+  background: #0d244e;
+}
+
+@media only screen and (max-width: 700px) {
+  .post_container {
+    flex-direction: column;
+    height: 120vh;
+  }
+  .post_container h1 {
+    display: initial;
+    align-self: center;
+    font-size: 25px;
+  }
+  .post_container > p, li {
+    font-size: 14px;
+  }
+  .post_all {
+    width: 100vw;
+    height: 45vh;
+  }
+  .post_all h2 {
+    display: none;
+  }
+  .post_info {
+    padding: 20px 0 20px 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .post_list {
+    height: 70%;
+  }
+  .icon_grid {
+    flex-direction: column;
+  }
+  .icon_grid label {
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 25%;
+  }
+  .icon_grid img {
+    width: 30px;
+    height: 30px;
+  }
+  .tags {
+    width: 80%;
+  }
+  .read_more {
+    width: 50%;
+  }
+}
