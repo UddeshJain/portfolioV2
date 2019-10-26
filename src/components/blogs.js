@@ -7,10 +7,11 @@ const Blogs = () => {
   const [postData, setPostData] = useState([])
   const [activePost, setActivePost] = useState(0)
   useEffect(() => {
-    async function fetchPost() {
+    function fetchPost() {
       const url = 'https://dev.to/api/articles?username=uddeshjain'
-      const result = await axios.get(url);
-      setPostData(result.data)
+      axios.get(url).then(result =>
+        setPostData(result.data)
+      ).catch(e => console.log(e))
     }
     fetchPost()
   }, []);
