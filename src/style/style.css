@@ -16,7 +16,7 @@ body {
     font-family: 'Google Sans', sans-serif;
 }
 
-.container, .post_container div {
+.container, .post_container, .skills_container div {
   transform: translateX(0);
   opacity: 1;
   animation-name: titleAnimation;

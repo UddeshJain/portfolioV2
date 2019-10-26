@@ -20,7 +20,7 @@ const Header = () => {
           <ul onClick={handleClick}>
             <Link to="/"><li>Home</li></Link>
             <Link to="/blogs"><li>Blogs</li></Link>
-            <li>About</li>
+            <Link to="/skills"><li>Skills</li></Link>
             <li>Projects</li>
             <li>Projects</li>
             <li>Projects</li>
