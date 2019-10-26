@@ -6,6 +6,7 @@ import Header from './components/header';
 import Home from './components/homePage';
 import Blogs from './components/blogs';
 import Skills from './components/skills';
+import Projects from './components/projects';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Home path="/" />
         <Blogs path="/blogs" />
         <Skills path="/skills" />
+        <Projects path="/projects" />
       </Router>
     </div>
   )

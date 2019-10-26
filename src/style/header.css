@@ -1,31 +1,32 @@
 .header {
   width: 100vw;
   height: 10vh;
+  display: flex;
 }
 
 .menu_button {
   display: inline-block;
   cursor: pointer;
   position: absolute;
-  left: 20px;
+  left: 50px;
   top: 20px;
   cursor: pointer;
   z-index: 20;
 }
 
 .bar1, .bar2, .bar3 {
-  width: 35px;
+  width: 30px;
   height: 6px;
   background-color: rgb(24, 23, 23);
-  margin: 6px 0;
+  margin: 4px 0;
   transition: 0.4s;
   border-radius: 10px;
 }
 
 .change .bar1 {
   background-color: white;
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-8px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 4px);
 }
 
 .change .bar2 {opacity: 0;}
@@ -45,7 +46,7 @@
   height: 100vh;
   z-index: 10;
   background-color: black;
-  animation: slide 1s forwards;
+  animation: slide 0.5s forwards;
 }
 
 @keyframes slide {
@@ -78,11 +79,57 @@
   color: #235bc1;
 }
 
+.header_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  display: flex;
+  width: 30vw;
+  height: 10vh;
+  left: 60vw;
+  padding-top: 10px;
+  /* border: 2px solid black; */
+}
+
+.header_list li {
+  list-style: none;
+  display: inline;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.theme_icon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  left: 85vw;
+  width: 10vw;
+  height: 10vh;
+}
+
+.theme_icon img {
+  width: 25px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   .header {
     height: 7vh;
   }
   .bar1, .bar2, .bar3 {
     height: 5px;
+  }
+  .menu_button {
+    left: 30px;
+  }
+  .change .bar3 {
+    background-color: white;
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  .header_list {
+    display: none;
   }
 }

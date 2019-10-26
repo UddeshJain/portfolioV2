@@ -57,17 +57,3 @@ const Blogs = () => {
 }
 
 export default Blogs;
-
-
-
-// const axios = require('axios');
-
-// async function getdata() {
-//   let data = await axios.get(`https://dev.to/api/articles?username=uddeshjain`)
-//   console.log(data.data[0])
-// }
-
-// const a = getdata()
-
-// const a = new Date('2019-10-02T20:11:42.601Z').toDateString()
-// console.log(a)
