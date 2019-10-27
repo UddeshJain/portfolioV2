@@ -11,7 +11,6 @@
   max-height: 100vh;
 }
 
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -40,7 +39,6 @@ body i, li, p, span {
   animation-iteration-count: 1;
 }
 
-
 @keyframes titleAnimation {
   0% {
     transform: translateX(-40px);
@@ -59,7 +57,6 @@ body i, li, p, span {
   }
 }
 
-
 h1 {
   font-size: 40px;
 }
@@ -73,10 +70,6 @@ a {
   text-decoration: none;
   color: black;
 }
-
-/* body p, li, a, h1{
-  color: white !important;
-} */
 
 @media only screen and (max-width: 600px) {
   p {

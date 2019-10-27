@@ -80,10 +80,6 @@
   font-size: 30px;
 }
 
-/* .project_content img {
-  width: 17px;
-} */
-
 @media only screen and (max-width: 700px) {
   .projects_main {
     width: 95vw;

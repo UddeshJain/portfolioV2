@@ -15,7 +15,7 @@ const Home = () => {
             <img src={Profile} alt="profile"></img>
           </a>
         </div>
-        <div className="job_title"><p>full stack developer</p></div>
+        <div className="job_title"><p><b>full stack developer</b></p></div>
         <div className="job_description">
           <p>javascript lover | reactjs | breaking things | making them better</p>
         </div>

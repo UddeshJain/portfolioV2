@@ -7,7 +7,7 @@ import '../style/style.css';
 const Header = () => {
   const [open, setOpen] = useState(false)
   const [theme, setTheme] = useContext(ThemeContext)
-
+  
   const handleClick = () => {
     setOpen(!open)
   }
@@ -20,6 +20,7 @@ const Header = () => {
       setTheme('')
     }
   }
+
   return (
     <div className="header">
       <div className='menu_button' onClick={handleClick}>
@@ -32,7 +33,6 @@ const Header = () => {
         <Link to='/blogs'><li>Blogs</li></Link>
         <Link to='/projects'><li>Projects</li></Link>
       </div>
-      {/* TODO theme is not working */}
       <div className="theme_icon" onClick={handleTheme}>
         {theme === '' ?
           (<i className="fas fa-moon"></i>) :

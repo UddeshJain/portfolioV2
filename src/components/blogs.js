@@ -19,7 +19,7 @@ const Blogs = () => {
   const postClickHandler = (event) => {
     setActivePost(event.currentTarget.id)
   }
-  
+
   return (
     <div className="post_container">
       <h1>Here are few posts</h1>
@@ -38,7 +38,6 @@ const Blogs = () => {
             ))}
           </ul>
         </div>
-        {/* <p>Scroll down to see more<i className="fas fa-arrow-down"></i></p> */}
       </div>
       {postData[activePost] ? 
         <BlogInfo
