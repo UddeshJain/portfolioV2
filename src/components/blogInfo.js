@@ -1,11 +1,7 @@
 import React from 'react';
 import '../style/blogs.css';
-import articleIcon from '../assets/article.png';
-import timeIcon from '../assets/time.png';
-import reactionIcon from '../assets/reaction.png';
-import commentsIcon from '../assets/comments.png';
 
-const BlogInfo = ({ title, date, tags, url, reactions, comments, usename }) => {
+const BlogInfo = ({ title, date, tags, url, reactions, comments }) => {
   let colors = [
     '#eb345c',
     '#ac3483',
@@ -17,20 +13,20 @@ const BlogInfo = ({ title, date, tags, url, reactions, comments, usename }) => {
   return (
     <div className="post_info">
       <div className="article_div">
-        <img src={articleIcon} width="100px" height="100px" alt="article icon"></img>
+        <i className="far fa-newspaper" style={{color: "black", fontSize: "60px"}}></i>
       </div>
       <h3>{title}</h3>
       <div className="icon_grid">
         <label>
-          <img src={timeIcon}></img>
+          <i className="fas fa-calendar-alt" style={{ color: "yellow"}}></i>
           <p>{new Date(date).toDateString()}</p>
         </label>
         <label>
-          <img src={reactionIcon}></img>
+          <i className="fas fa-heart" style={{ color: "cyan" }}></i>
           <p>{reactions}</p>
         </label>
         <label>
-          <img src={commentsIcon}></img>
+          <i className="fas fa-comment-alt" style={{ color: "pink" }}></i>
           <p>{comments}</p>
         </label>
       </div>

@@ -38,7 +38,7 @@ const Blogs = () => {
             ))}
           </ul>
         </div>
-        <p>Scroll down to see more &dArr;</p>
+        {/* <p>Scroll down to see more<i className="fas fa-arrow-down"></i></p> */}
       </div>
       {postData[activePost] ? 
         <BlogInfo

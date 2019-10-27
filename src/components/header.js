@@ -1,22 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from '@reach/router';
+import ThemeContext from './themeContext';
 import '../style/header.css';
 import '../style/style.css';
-import moonSvg from '../assets/moon.svg';
-import sunSvg from '../assets/sun.svg';
 
 const Header = () => {
   const [open, setOpen] = useState(false)
+  const [theme, setTheme] = useContext(ThemeContext)
+
   const handleClick = () => {
     setOpen(!open)
   }
   
+  const handleTheme = () => {
+    if (theme == '') {
+      setTheme('darkTheme')
+    }
+    else {
+      setTheme('')
+    }
+  }
   return (
     <div className="header">
-      <div className={open ? "menu_button change" : "menu_button"} onClick={handleClick}>
-          <div className="bar1"></div>
-          <div className="bar2"></div>
-          <div className="bar3"></div>
+      <div className='menu_button' onClick={handleClick}>
+        {open ?
+          (<i className="fas fa-times" style={{ color: "white" }}></i>) :
+          (<i className="fas fa-bars"></i>)}
       </div>
       <div className="header_list">
         <Link to='/'><li>Home</li></Link>
@@ -24,8 +33,10 @@ const Header = () => {
         <Link to='/projects'><li>Projects</li></Link>
       </div>
       {/* TODO theme is not working */}
-      <div className="theme_icon dark">
-        <img src={moonSvg} />
+      <div className="theme_icon" onClick={handleTheme}>
+        {theme === '' ?
+          (<i className="fas fa-moon"></i>) :
+          (<i className="fas fa-sun"></i>)}
       </div>
       {open ? (
         <div className="menu_list_container">

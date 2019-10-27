@@ -16,7 +16,7 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  color: white;
+  color: white !important;
 }
 
 .post_all {
@@ -29,12 +29,7 @@
 }
 
 .post_info a {
-  color: white;
-}
-
-.post_container p a {
-  font-size: 15px;
-  font-weight: 50;
+  color: white !important;
 }
 
 .post_all li {
@@ -46,13 +41,13 @@
 }
 
 .active_post {
-  background: #edeef0;
+  background: #d4d4d6;
   font-weight: bold;
 }
 
 .post_list {
   width: 100%;
-  height: 60%;
+  height: 70%;
   margin: 0;
   padding: 0;
   overflow-y: scroll;
@@ -70,12 +65,13 @@
   height: 140px;
   align-self: center;
   border-radius: 50%;
-  background: rgb(231, 241, 240);
+  background: rgb(231, 241, 240) !important;
 }
 .icon_grid {
   display: flex;
   align-items: center;
   align-self: center;
+  justify-content: center;
   width: 80%;
   margin-bottom: 20px;
   border-top: 1px solid rgb(235, 232, 232);
@@ -86,14 +82,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 50%;
-}
-
-.icon_grid img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
 }
 
 .tags {
@@ -127,7 +115,7 @@
 @media only screen and (max-width: 700px) {
   .post_container {
     flex-direction: column;
-    height: 120vh;
+    height: 100vh;
   }
   .post_container h1 {
     display: initial;
@@ -139,7 +127,9 @@
   }
   .post_all {
     width: 100vw;
-    height: 45vh;
+  }
+  .post_list {
+    height: 70%;
   }
   .post_all h2 {
     display: none;
@@ -147,25 +137,21 @@
   .post_info {
     padding: 20px 0 20px 0;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
   }
-  .post_list {
-    height: 70%;
+  .article_div {
+    display: none;
   }
   .icon_grid {
     flex-direction: column;
   }
   .icon_grid label {
-    width: 100%;
+    width: 90%;
+    height: 7vh;
     justify-content: flex-start;
-    margin-left: 25%;
-  }
-  .icon_grid img {
-    width: 30px;
-    height: 30px;
   }
   .tags {
-    width: 80%;
+    display: none;
   }
   .read_more {
     width: 50%;

@@ -37,7 +37,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background-color: var(--bg, white);
   margin: 20px;
   padding: 20px 60px;
   border-radius: 10px;
@@ -50,6 +50,12 @@
   margin: 10px;
 }
 
+.project_content i {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  color: var(--bg-text, black);
+}
 
 .description {
   overflow-y: scroll;
@@ -74,9 +80,9 @@
   font-size: 30px;
 }
 
-.project_content img {
+/* .project_content img {
   width: 17px;
-}
+} */
 
 @media only screen and (max-width: 700px) {
   .projects_main {

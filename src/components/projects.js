@@ -62,11 +62,12 @@ const Projects = () => {
   return (
     <div className="projects_container">
       <h1>Some awesome work of mine</h1>
+      {/* <i className="fas fa-moon"></i> */}
       <div className="projects_main">
         <div className="wrapper">
           {data.map((data, index) => (
             <div className="project_content" key={index}>
-              <div><span>{data.name}</span><a href={data.link} target="_blank"><img src={redirectSvg} /></a></div>
+              <div className="redirect"><span>{data.name}</span><a href={data.link} target="_blank"><i className="fas fa-location-arrow"></i></a></div>
               <div className="description"><p>{data.description}</p></div>
               <div><span>{data.date}</span></div>
             </div>
