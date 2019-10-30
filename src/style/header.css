@@ -49,7 +49,7 @@ i {
 }
 
 .menu_list_container li:hover {
-  color: #235bc1;
+  color: #235bc1 !important;
 }
 
 .header_list {

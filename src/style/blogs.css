@@ -124,6 +124,9 @@
     width: 100vw;
     height: 50vh;
   }
+  .article_div {
+    display: none;
+  }
   .tags {
     display: none;
   }

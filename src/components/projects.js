@@ -68,7 +68,7 @@ const Projects = () => {
               <div className="redirect">
                 <span>{data.name}</span>
                 <a href={data.link} target="_blank">
-                  <i class="fas fa-external-link-alt"></i>
+                  <i className="fas fa-external-link-alt"></i>
                 </a>
               </div>
               <div className="description"><p>{data.description}</p></div>
