@@ -14,6 +14,17 @@ i {
   cursor: pointer;
 }
 
+/* This style for download button */
+.fa-download {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.fa-download:hover {
+  color: #235bc1;
+}
+
 .menu_list_container {
   display: flex;
   align-items: center;
