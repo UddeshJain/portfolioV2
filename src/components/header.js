@@ -45,6 +45,7 @@ const Header = () => {
             <Link to="/blogs"><li>Blogs</li></Link>
             <Link to="/skills"><li>Skills</li></Link>
             <Link to="/projects"><li>Projects</li></Link>
+            <a href="https://drive.google.com/uc?export=download&id=1mo0uvtzleuFkBQEjYZjhsuVqllWvANux"><li>Resume<i className="fas fa-download" style={{color: "white", margin:"0", padding:"0"}}></i></li></a>
           </ul>
         </div>
       ) : null }
