@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { render } from 'react-dom';
 import { Router } from '@reach/router';
+import { Helmet } from 'react-helmet';
 import ThemeContext from './components/themeContext';
 import './style/style.css';
 import Header from './components/header';
@@ -22,6 +23,12 @@ const App = () => {
   }
   return (
     <ThemeContext.Provider value={theme}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>UddeshJain</title>
+        <meta name="description" content="Uddesh's portfolio website." />
+        <link rel="canonical" href="https://uddesh.tech" />
+      </Helmet>
       <div>
         <Header />
         <Router>
