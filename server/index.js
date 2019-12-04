@@ -15,7 +15,7 @@ const app = express();
 
 app.use('/dist', express.static('dist'));
 app.use((req, res) => {
-  res.write(parts[0])
+  res.write(parts[0]);
   const reactMarkup = (
     <ServerLocation url={req.url}>
       <App />
