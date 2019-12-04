@@ -1,5 +1,4 @@
 import React from "react";
-import '../style/projects.css';
 
 const Projects = () => {
   const data = [

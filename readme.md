@@ -14,3 +14,19 @@
 ![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/42andnbuf26iee1dbdq6.png)
 
 ![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/bybhs4avawvxtf5ong3q.png)
+
+## Instructions
+
+1. Clone this repo
+
+2. To install dependencies
+
+```
+$ npm install
+```
+
+3. To run
+
+```
+$ npm run start
+```

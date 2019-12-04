@@ -1,5 +1,4 @@
 import React from 'react';
-import '../style/blogs.css';
 
 const BlogInfo = ({ title, date, tags, url, reactions, comments }) => {
   let colors = [

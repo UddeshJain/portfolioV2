@@ -1,6 +1,4 @@
 import React from 'react';
-import '../style/homePage.css';
-import Profile from '../assets/profile.png'
 
 const Home = () => {
   return (
@@ -12,7 +10,7 @@ const Home = () => {
       <div className="profile_container">
         <div className="profile_picture">
           <a href="https://www.linkedin.com/in/uddeshjain/" target="_blank">
-            <img src={Profile} alt="profile"></img>
+            <img src="https://i.ibb.co/52sMn0Z/profile.png" alt="profile" border="0" />
           </a>
         </div>
         <div className="job_title"><p><b>full stack developer</b></p></div>

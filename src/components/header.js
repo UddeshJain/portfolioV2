@@ -1,8 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Link } from '@reach/router';
 import ThemeContext from './themeContext';
-import '../style/header.css';
-import '../style/style.css';
 
 const Header = () => {
   const [open, setOpen] = useState(false)
