@@ -28,5 +28,5 @@ $ npm install
 3. To run
 
 ```
-$ npm run start
+$ npm run dev
 ```
