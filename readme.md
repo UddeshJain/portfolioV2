@@ -1,7 +1,7 @@
 # My Portfolio website version 2
 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4c958510-822f-4f54-8f57-8cafd1689443/deploy-status)](https://app.netlify.com/sites/uddeshjain/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3b2f25eb-9c02-4931-9695-c19758c20246/deploy-status)](https://app.netlify.com/sites/uddeshjain/deploys)
 [![Build Status](https://travis-ci.com/UddeshJain/portfolioV2.svg?branch=master)](https://travis-ci.com/UddeshJain/portfolioV2)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
