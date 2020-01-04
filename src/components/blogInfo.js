@@ -12,7 +12,7 @@ const BlogInfo = ({ title, date, tags, url, reactions, comments }) => {
   return (
     <div className="post_info">
       <div className="article_div">
-        <i className="far fa-newspaper" style={{color: "black", fontSize: "60px"}}></i>
+        <i className="far fa-file-alt" style={{color: "black", fontSize: "60px"}}></i>
       </div>
       <h3>{"`" + title.toUpperCase() + "`"}</h3>
       <div className="tags">
