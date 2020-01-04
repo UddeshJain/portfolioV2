@@ -26,7 +26,7 @@ const App = () => {
         <meta charSet="utf-8" />
         <title>UddeshJain</title>
         <meta name="description" content="Uddesh's portfolio website." />
-        <link rel="canonical" href="https://uddesh.tech" />
+        <link rel="canonical" href="https://uddesh.me" />
       </Helmet>
       <div>
         <Header />
