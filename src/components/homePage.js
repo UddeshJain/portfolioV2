@@ -15,15 +15,15 @@ const Home = () => {
         </div>
         <div className="job_title"><p><b>full stack developer</b></p></div>
         <div className="job_description">
-          <p>javascript lover | reactjs | breaking things | making them better</p>
+          <p>javascript lover | Full Stack Developer | ReactJS | NodeJS | Blogger</p>
         </div>
       </div>
       <div className="icons">
+        <a href="https://gitlab.com/UddeshJain" target="_blank"><i className="fab fa-gitlab"></i></a>
         <a href="https://github.com/UddeshJain" target="_blank"><i className="fab fa-github"></i></a>
         <a href="https://dev.to/uddeshjain" target="_blank"><i className="fab fa-dev"></i></a>
         <a href="https://www.linkedin.com/in/uddeshjain/" target="_blank"><i className="fab fa-linkedin"></i></a>
         <a href="https://twitter.com/Uddesh_" target="_blank"><i className="fab fa-twitter"></i></a>
-        <a href="https://uddesh-awesome-portfolio.firebaseapp.com/" target="_blank"><i className="fas fa-globe"></i></a>
       </div>
       <a className="dark" href="https://www.google.com/search?q=UddeshJain" target="_blank"><p>google <b>UddeshJain</b></p></a>
     </div>
