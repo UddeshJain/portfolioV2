@@ -3,6 +3,12 @@ import React from "react";
 const Projects = () => {
   const data = [
     {
+      name: "My Portfolio Version 2",
+      description: "This is the 2nd version of my portfolio website. It is built with React",
+      link: "",
+      date: "Nov 2019"
+    },
+    {
       name: "SINTAX",
       description: "Sintax is a programming language built with JavaScript. It's easy to learn and use.",
       link: "https://github.com/UddeshJain/SINTAX",
@@ -16,14 +22,14 @@ const Projects = () => {
     },
     {
       name: "MOVIE RENTAL API",
-      description: "This API build with NodeJS and allows users to rent a movie. I has authentication and role base access system.",
+      description: "This API build with NodeJS and uses MongoDB as the database. It allows users to rent a movie. It has authentication and role-based access system.",
       link: "https://github.com/UddeshJain/movie_rental_api",
       date: "Aug - Sept, 2019"
     },
     {
       name: "MY WEBSITE V1",
       description: "This is first version of my portfolio website.",
-      link: "https://uddesh-awesome-portfolio.firebaseapp.com/",
+      link: "https://uddeshjain.me",
       date: "June - July, 2019"
     },
     {
@@ -49,13 +55,7 @@ const Projects = () => {
       description: "Weather web app is very simple to use, just write the city name in the text field and hit get weather button and it will show the current weather.",
       link: "https://weather-app-8827.firebaseapp.com/",
       date: "Nov - Dec, 2018"
-    },
-    {
-      name: "BURGER STORE",
-      description: "Burger store allows the user to build a burger with customized ingredients. It also has a login/signup option so The authenticated users can save their orders and repeat the saved orders.",
-      link: "https://react-burger-store-24abd.firebaseapp.com/",
-      date: "Sept - Oct, 2018"
-    },
+    }
   ]
   return (
     <div className="projects_container">
